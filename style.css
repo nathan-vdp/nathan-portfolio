@@ -16,7 +16,7 @@
 }
 
 .heroText {
-    margin-right: 117px;
+    line-height: 1.6;
 }
 
 @keyframes morph {
