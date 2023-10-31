@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    padding: 20px 3%;
+    z-index: 100;
+}
+
+.navbar a {
+    margin-left: 15px;
+}
+
+.heroText {
+    margin-right: 117px;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.hero img {
+    animation: morph 8s ease-in-out infinite;
+}
