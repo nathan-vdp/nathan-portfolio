@@ -24,6 +24,28 @@ header {
     margin-left: 15px;
 }
 
+.hero-image img{
+    animation: morph 8s ease-in-out infinite;
+}
+
+.skills {
+    align-items: center;
+    display: flex;
+    position: absolute;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @keyframes morph {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -36,10 +58,6 @@ header {
     100% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
-}
-
-.hero-image img{
-    animation: morph 8s ease-in-out infinite;
 }
 
 @media (max-width: 768px) {
@@ -62,17 +80,4 @@ header {
         flex-direction: column;
         position: static;
     }
-}
-
-.skills {
-    align-items: center;
-    display: flex;
-    position: absolute;
-}
-
-.skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    list-style: none;
 }
