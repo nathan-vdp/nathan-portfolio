@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
 body {
-    background-image: url("./img/future-grid.webp");
+    background-image: url("./img/future.png");
     background-size: cover;
-    background-repeat: no-repeat;
     background-color: #6819fe;
+    background-attachment: fixed;
 }
 
 header {
@@ -16,15 +22,13 @@ header {
     padding: 20px 10%;
     z-index: 100;
     position: fixed;
-    /* max-width: 1200px;
-    margin-left: 365px; */
 }
 
 .navbar a {
     margin-left: 15px;
 }
 
-.hero-image img{
+.hero-image img {
     animation: morph 8s ease-in-out infinite;
 }
 
@@ -44,6 +48,23 @@ header {
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.projects-grid {
+    grid-gap: 5rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    width: 100%;
+}
+
+.projects-grid .pro {
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: flex;
 }
 
 @keyframes morph {
